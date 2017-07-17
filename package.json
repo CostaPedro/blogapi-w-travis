@@ -1,0 +1,12 @@
+{
+  "name": "blogapi-w-travis",
+  "version": "1.0.0",
+  "description": "thinkful challenge for server side app and integrated testing",
+  "main": "blogApiWTestRouter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

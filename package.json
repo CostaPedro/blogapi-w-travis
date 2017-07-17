@@ -2,11 +2,26 @@
   "name": "blogapi-w-travis",
   "version": "1.0.0",
   "description": "thinkful challenge for server side app and integrated testing",
-  "main": "blogApiWTestRouter.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./test",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Pedro Costa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "uuid": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CostaPedro/blogapi-w-travis"
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
 }

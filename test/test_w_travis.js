@@ -74,7 +74,8 @@ describe('Blog Posts', function() {
       .then(function( res) {
         const updatedPost = Object.assign(res.body[0], {
           title: 'connect the dots',
-          content: 'la la la la la'
+          content: 'la la la la la',
+          author: 'pedro costa'
         });
         return chai.request(app)
           .put(`/blog-posts/${res.body[0].id}`)

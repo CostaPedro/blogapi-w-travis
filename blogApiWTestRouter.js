@@ -68,7 +68,7 @@ router.put('/:id', jsonParser, (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating blog-posts item \`${req.params.id}\``);
-  blogPosts.update({
+  BlogPosts.update({
     id: req.params.id,
     title: req.body.title,
     content: req.body.content,
@@ -80,7 +80,7 @@ router.put('/:id', jsonParser, (req, res) => {
 // when DELETE request comes in with an id in path,
 // try to delete that item from blogPosts.
 router.delete('/:id', (req, res) => {
-  blogPosts.delete(req.params.id);
+  BlogPosts.delete(req.params.id);
   console.log(`Deleted blog-posts item \`${req.params.ID}\``);
   res.status(204).end();
 });
